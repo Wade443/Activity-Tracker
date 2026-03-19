@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Mood Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>Daily Mood and Activity Tracker</h1>
+            <p>Track your daily mood and 1–3 activities.</p>
+        </header>
+
+        <section class="form-section">
+            <h2>Add Entry</h2>
+
+            <form id="entryForm">
+
+                <label>Date:</label>
+                <input type="date" id="dateInput" required>
+
+                <label>Mood:</label>
+                <select id="moodSelect" required>
+                    <option value="">Select mood</option>
+                    <option value="happy">Happy</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="sad">Sad</option>
+                    <option value="stressed">Stressed</option>
+                </select>
+
+                <label>Activity 1:</label>
+                <input type="text" id="activity1" placeholder="e.g. Gym">
+
+                <label>Activity 2:</label>
+                <input type="text" id="activity2" placeholder="Optional">
+
+                <label>Activity 3:</label>
+                <input type="text" id="activity3" placeholder="Optional">
+
+                <button type="submit">Save Entry</button>
+
+            </form>
+        </section>
+
+        <section class="filter-section">
+            <h2>Search & Filter</h2>
+
+            <input type="text" id="searchInput" placeholder="Search activities...">
+
+            <select id="filterMood">
+                <option value="all">All moods</option>
+                <option value="happy">Happy</option>
+                <option value="neutral">Neutral</option>
+                <option value="sad">Sad</option>
+                <option value="stressed">Stressed</option>
+            </select>
+        </section>
+
+        <section class="stats-section">
+            <h2>Statistics</h2>
+            <p>Total entries: <span id="totalEntries">0</span></p>
+            <p>Most common mood: <span id="commonMood">-</span></p>
+            <p>Average activities: <span id="avgActivities">0</span></p>
+        </section>
+
+        <section class="history-section">
+            <h2>History</h2>
+            <div id="entriesList"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
