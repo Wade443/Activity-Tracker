@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #555;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-size: 1.3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #666;
+}
+
+button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+.filter-section input,
+.filter-section select {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.stats-section p {
+    margin-bottom: 10px;
+}
+
+#entriesList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.entry-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 14px;
+    background-color: #fafafa;
+}
+
+.entry-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.entry-card p {
+    margin-bottom: 6px;
+}
+
+.entry-card ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.entry-card button {
+    background-color: #d9534f;
+    padding: 8px 12px;
+    font-size: 0.95rem;
+}
+
+.entry-card button:hover {
+    background-color: #c9302c;
+}
+
+@media (min-width: 768px) {
+    .filter-section {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .filter-section input,
+    .filter-section select {
+        margin-bottom: 0;
+    }
+}
