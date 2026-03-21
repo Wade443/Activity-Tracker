@@ -28,7 +28,9 @@ The purpose of this project was to practise DOM manipulation, event handling, lo
 
 You can also use a live server extension in VS Code if needed.
 
-## Link to the video overview https://video.laurea.fi/media/Project+1+web+applications/0_bit42pzx
+## Link to the video and website
+Video: https://video.laurea.fi/media/Project+1+web+applications/0_bit42pzx
+Website link: https://wade443.github.io/Activity-Tracker/
 
 ## Reflection
 This project helped me understand how to build an interactive single page application with JavaScript. The most useful part was learning how to connect form input, DOM updates, and localStorage so that the data stays saved after refreshing the page.
